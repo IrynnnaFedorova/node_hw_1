@@ -1,7 +1,7 @@
-const { addContact } = require('./add-contact.js');
-const { getContactById } = require('./get-contact-by-id.js');
-const { listContacts } = require('./list-contacts.js');
-const { removeContact } = require('./remove-contact.js');
+const { addContact } = require('./add-contact');
+const { getContactById } = require('./get-contact-by-id');
+const { listContacts } = require('./list-contacts');
+const { removeContact } = require('./remove-contact');
 
 module.exports = {
   addContact,

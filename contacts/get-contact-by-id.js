@@ -1,4 +1,4 @@
-const { readContent } = require('./read-content.js.js');
+const { readContent } = require('./read-content');
 
 async function getContactById(contactId) {
   const contacts = await readContent();

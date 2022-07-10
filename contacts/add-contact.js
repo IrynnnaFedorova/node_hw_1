@@ -1,6 +1,6 @@
 const { randomUUID } = require('crypto');
-const { readContent } = require('./read-content.js.js');
-const { writeContent } = require('./write-content.js.js');
+const { readContent } = require('./read-content');
+const { writeContent } = require('./write-content');
 
 function getNewContact(name, email, phone) {
   return { id: randomUUID(), name, email, phone };

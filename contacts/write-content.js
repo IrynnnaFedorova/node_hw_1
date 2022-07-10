@@ -1,8 +1,9 @@
 const fs = require('fs/promises');
 const path = require('path');
-const pathDB = '../../db/contacts.json';
-const contactsPath = path.join(__dirname, pathDB);
-const { jsonStr } = require('../../utils/json-stringify');
+// const pathDB = '../../db/contacts.json';
+// const contactsPath = path.join(__dirname, pathDB);
+const contactsPath = path.join(__dirname, 'db', 'contacts.json');
+const { jsonStr } = require('../utils/json-stringify');
 
 const writeContent = async (contacts) => {
   const result = await fs.writeFile(contactsPath, jsonStr(contacts));
