@@ -1,7 +1,7 @@
 const { readContent } = require('./read-content');
 const { writeContent } = require('./write-content');
-const { isAnExistingContact } = require('../../utils/is-an-existing-contact');
-const { newContacts } = require('../../utils/new-contacts');
+const { isAnExistingContact } = require('../utils/is-an-existing-contact');
+const { newContacts } = require('../utils/new-contacts');
 
 async function removeContact(contactId) {
   const contacts = await readContent();

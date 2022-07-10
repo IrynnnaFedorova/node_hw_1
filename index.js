@@ -4,7 +4,7 @@ const {
   getContactById,
   removeContact,
   addContact,
-} = require('./controllers/contacts/index.js');
+} = require('./contacts/index');
 
 const program = new Command();
 
